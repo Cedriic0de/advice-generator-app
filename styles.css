@@ -70,7 +70,27 @@ p,
     transition: ease-in 200ms;
     cursor: pointer;
 }
+span:after {
+    content: 'Shuffle';
+    position: absolute;
+    opacity: 0;
+    top: 8px;
+    right: -20px;
+    left: 50px;
+    transition: 0.5s;
+    color: #f2f2f2;
+    display: inline;
+    font-family: "Manrope", 'Lucida Sans', Verdana, sans-serif;
 
+  }
+  .button:hover span {
+    padding: 24px 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 .separator {
     display: flex;
     align-items: center;
@@ -100,4 +120,10 @@ bottom: 0;
 left: 50%;
 transform: translate(-50%, 0);
 margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
 }
