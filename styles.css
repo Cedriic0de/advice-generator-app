@@ -81,6 +81,19 @@ span:after {
     color: #f2f2f2;
     display: inline;
     font-family: "Manrope", 'Lucida Sans', Verdana, sans-serif;
+<<<<<<< HEAD
+=======
+
+  }
+  .button:hover span {
+    padding: 24px 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+>>>>>>> d52617166fb34f6f0945975dbddfed6e900a129c
 
   }
   .button:hover span {
@@ -126,4 +139,8 @@ margin: auto;
     .box {
         width: 100%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d52617166fb34f6f0945975dbddfed6e900a129c
