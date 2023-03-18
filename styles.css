@@ -1,13 +1,13 @@
 *, *::before, *::after{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    outline: none;
 }
 
 body{
     background-color: hsl(218, 23%, 16%);
     font-family: "Manrope", 'Lucida Sans', Verdana, sans-serif;
 }
-
 a{
     text-decoration: none;
 }
@@ -36,8 +36,17 @@ p,
 .fa{
     color: #fff;
 }
-.box{
+.btn-shuffle,
+.separator {
+    display: flex;
+    align-items: center;
+}
+.box,
+.button,
+.attribution {
     position: absolute;
+}
+.box{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -48,7 +57,6 @@ p,
 }
 
 .button{
-    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -57,12 +65,24 @@ p,
 
 .btn-shuffle{
     background-color: hsl(150, 100%, 66%);
-    border-radius: 100%;
+    border-radius: 10px;
     border: none;
-    padding: 0.5em;
-    width: 40px;
+    padding: 0.8em;
     height: 40px;
-    
+    justify-content: space-around; 
+}
+img {
+    width: 25px;
+    height: 25px;
+}
+.btn-text {
+    display: block;
+    font-size: 1.2em;
+    padding-left: 8px;
+    transition: 0.54s ease-in-out all;
+}
+.btn-show-text .btn-text{
+    display: none;
 }
 
 .btn-shuffle:hover{
@@ -70,47 +90,11 @@ p,
     transition: ease-in 200ms;
     cursor: pointer;
 }
-span:after {
-    content: 'Shuffle';
-    position: absolute;
-    opacity: 0;
-    top: 8px;
-    right: -20px;
-    left: 50px;
-    transition: 0.5s;
-    color: #f2f2f2;
-    display: inline;
-    font-family: "Manrope", 'Lucida Sans', Verdana, sans-serif;
-<<<<<<< HEAD
-=======
-
-  }
-  .button:hover span {
-    padding: 24px 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
->>>>>>> d52617166fb34f6f0945975dbddfed6e900a129c
-
-  }
-  .button:hover span {
-    padding: 24px 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
 .separator {
-    display: flex;
-    align-items: center;
     text-align: center;
     margin-bottom: .4em;
 }
-  
+
 .separator::before,
 .separator::after {
     content: '';
@@ -126,21 +110,17 @@ span:after {
 .separator:not(:empty)::after {
     margin-left: .5em;
 }
-
 .attribution{
-position:absolute;
-bottom: 0;
-left: 50%;
-transform: translate(-50%, 0);
-margin: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: auto;
+    color:#f2f2f2;
+    opacity: 0.6;
 }
 
 @media screen and (max-width: 480px) {
     .box {
-        width: 100%;
+        width: 80%;
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> d52617166fb34f6f0945975dbddfed6e900a129c
